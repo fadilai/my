@@ -142,9 +142,11 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade showd d-none my-alert" role="alert">
-              <strong>Terimakasih :)</strong> Atas Pesan dan Kesan untuk si pembuat web yang imut ini.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <div class="alert alert-success d-flex align-items-center d-none my-alert" role="alert">
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+              <div>
+                <h4>Terimakasih :)</h4> Pasti ngirim kode voucher Kouta ya..?
+              </div>
             </div>
             <form name="contact-form">
               <div class="mb-3">
@@ -202,7 +204,7 @@
             btnLoading.classList.toggle('d-none');
             btnKirim.classList.toggle('d-none');
             /// tampilkan alert
-            myAlert.classList.toggle('d-none');
+           myAlert.classList.toggle('d-none');
             //reset form
             form.reset()
             console.log('Success!', response)
@@ -210,5 +212,6 @@
           .catch((error) => console.error('Error!', error.message))
       });
     </script>
+
   </body>
 </html>
